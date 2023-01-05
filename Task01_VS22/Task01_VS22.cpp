@@ -28,7 +28,11 @@ int main() {
 		int x = 0;
 		std::cout << "Введите число\n";
 		std::cin >> x;
-		switch (x)
+
+		months month = static_cast<months>(x); // не понимаю, почему оно не ругается при x - не входящем в перечисление 
+		std::cout << static_cast<int>(month);
+
+		switch (month)
 		{
 		case 1:
 			std::cout << "Январь" << std::endl;
