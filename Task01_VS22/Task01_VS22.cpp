@@ -30,7 +30,7 @@ int main() {
 		std::cin >> x;
 
 		months month = static_cast<months>(x); // не понимаю, почему оно не ругается при x - не входящем в перечисление 
-		std::cout << static_cast<int>(month);
+		//std::cout << static_cast<int>(month);
 
 		switch (month)
 		{
